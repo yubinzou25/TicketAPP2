@@ -111,7 +111,7 @@ __webpack_require__.r(__webpack_exports__);
   if (true) {
     // We are on the server
     return axios__WEBPACK_IMPORTED_MODULE_0___default.a.create({
-      baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      baseURL: 'http://www.ticket-yubin.click',
       headers: req.headers
     });
   } else {}
@@ -1988,6 +1988,7 @@ const AppComponent = ({
 };
 
 AppComponent.getInitialProps = async appContext => {
+  console.log('client start up');
   const client = Object(_api_build_client__WEBPACK_IMPORTED_MODULE_2__["default"])(appContext.ctx);
   const {
     data

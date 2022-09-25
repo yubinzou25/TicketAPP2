@@ -7034,32 +7034,33 @@ AppComponent.getInitialProps = function _callee(appContext) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
+          console.log('client start up');
           client = Object(_api_build_client__WEBPACK_IMPORTED_MODULE_5__["default"])(appContext.ctx);
-          _context.next = 3;
+          _context.next = 4;
           return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(client.get('/api/users/currentuser'));
 
-        case 3:
+        case 4:
           _await$client$get = _context.sent;
           data = _await$client$get.data;
           pageProps = {};
 
           if (!appContext.Component.getInitialProps) {
-            _context.next = 10;
+            _context.next = 11;
             break;
           }
 
-          _context.next = 9;
+          _context.next = 10;
           return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(appContext.Component.getInitialProps(appContext.ctx, client, data.currentUser));
 
-        case 9:
+        case 10:
           pageProps = _context.sent;
 
-        case 10:
+        case 11:
           return _context.abrupt("return", _objectSpread({
             pageProps: pageProps
           }, data));
 
-        case 11:
+        case 12:
         case "end":
           return _context.stop();
       }

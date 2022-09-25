@@ -1,5 +1,5 @@
-apiVersion: extensions/v1beta1
-kind: Ingress
+apiVersion: v1
+kind: Service
 metadata:
   name: ingress-service
   annotations:
